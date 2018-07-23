@@ -1,0 +1,38 @@
+FE2D is a collection of MATLAB files
+
+fe2d_n.m 
+fe2d_n_fast.m
+fe2dx_n.m 
+fe2dx_n_fast.m 
+fe2d_d.m 
+fe2d_d_fast.m 
+fe2dx_d.m 
+fe2dx_d_fast.m
+fe2d_r.m 
+fe2d_r_fast.m
+fe2dx_r.m 
+fe2dx_r_fast.m
+fe2d_p.m
+fe2d_p_fast.m
+fe2dx_p.m
+fe2dx_p_fast.m
+fe2d_nd.m 
+fe2d_nd_fast.m 
+fe2dx_nd.m 
+fe2dx_nd_fast.m
+fe2d_nr.m 
+fe2d_nr_fast.m
+fe2dx_nr.m 
+fe2dx_nr_fast.m
+fe2dx_nr_alt.m 
+fe2dx_nr_alt_fast.m
+
+for solving a reaction-diffusion systems modelling predator-prey interactions in arbitrary 2D habitats, using the finite element methods. FE2D is Copyright (C) 2014 Marcus R.Garvie.
+
+These programs are free software; you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+These programs are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with these programs; if not, write to the Free Software Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+
+If you use the FE2D codes in any program or publication, please acknowledge the authors by adding a reference to: Garvie M. R., Burkardt J., Morgan J. "Simple Finite Element Methods for Approximating Predator-Prey Dynamics in Two Dimensions using MATLAB", submitted.
