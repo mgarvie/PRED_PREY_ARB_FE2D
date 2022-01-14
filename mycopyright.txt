@@ -35,5 +35,5 @@ These programs are distributed in the hope that they will be useful, but WITHOUT
 
 You should have received a copy of the GNU General Public License along with these programs; if not, write to the Free Software Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
 
-If you use the FE2D codes in any program or publication, please acknowledge the authors by adding a reference to: <b>
+If you use the FE2D codes in any program or publication, please acknowledge the authors by adding a reference to:
 Garvie M.R. , Burkardt J., Morgan J. : "Simple Finite Element Methods for Approximating Predator-Prey Dynamics in Two Dimensions using MATLAB," Bulletin of Mathematical Biology (2015) Vol.77, No.3, pp. 548-578.
