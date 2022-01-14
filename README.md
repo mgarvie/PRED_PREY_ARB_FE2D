@@ -1,6 +1,8 @@
 # PRED_PREY_ARB_FE2D
 Simulating Predator-Prey Interactions in 2D
 
+[![DOI](https://zenodo.org/badge/139027253.svg)](https://zenodo.org/badge/latestdoi/139027253)
+
 PRED_PREY_ARB is a collection of simple MATLAB routines using the finite element method for simulating the dynamics of predator-prey interactions modelled by a nonlinear reaction-diffusion system. Unlike FD2D the systems are solved on domains of arbitrary shape using general boundary conditions. The collection of 2D codes are called FE2D. 
 
 FE2D is a collection of MATLAB routines using the finite element method for simulating the dynamics of predator-prey interactions in two space dimensions and time. The codes generalize my earlier predator-prey codes solved on the square (see FD2D) to the situation of arbitrary shaped domains with general boundary conditions (functions depending on space and time of Neumann, Dirichlet, Robin, Periodic, or mixed type).
