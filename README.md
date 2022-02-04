@@ -1,4 +1,4 @@
-<b>Repository:</b>
+## Repository:
  
 PRED_PREY_ARB_FE2D is a collection of MATLAB codes using the finite element method for simulating Predator-Prey Interactions in 2D.
 
@@ -22,7 +22,7 @@ The linear systems are solved using MATLAB's built in function gmres.m. The gmre
 
 The user is prompted for all the necessary parameters, time-step, initial data functions, and boundary data functions. However, the grid must be supplied by the user (further details given below).
 
-The reaction-diffusion system models spatially extended predator-prey interactions of Rosenzweig-MacArthur form (see Rosenzweig-MacArthur.jpg), where u(x,t) and v(x,t) are the prey and predator densities at time t and vector position x, and Delta is the usual Laplacian operator, and the parameters alpha, beta, gamma, and delta are strictly positive.
+The reaction-diffusion system models spatially extended predator-prey interactions of Rosenzweig-MacArthur form, where u(x,t) and v(x,t) are the prey and predator densities at time t and vector position x, and Delta is the usual Laplacian operator, and the parameters alpha, beta, gamma, and delta are strictly positive.
 
 ## Grid generation
 
@@ -31,16 +31,7 @@ Before the finite element codes can be run in MATLAB it is necessary to triangul
     t, a list of node indices corresponding to M triangles, given by an 3-by-M array;
     p, a list of N node coordinates, given by an 2-by-N array;
 
-We found it convenient to use an unstructured mesh generator (Mesh2d v24) in MATLAB freely available from http://www.mathworks.com/matlabcentral/fileexchange/25555-mesh2d-automatic-mesh-generation". To help understand how the arrays "p" and "t" are used to define a mesh we provide a simple example below. For example, the 2nd triangle (colured blue) in the list for array "t" has vertices labelled 2,4,3. And from array "p" we can see for example, that node 4 has coordinates (4,5).
-
-(see examplegrid.jpg)
-
-t = [  1 2 1 2 5;  ...
-        2 4 5 5 6;  ...
-        3 3 2 4 4 ];
-
-p = [  1 3 2 4 4 5;  ...
-          2 2 4 5 1 2 ];
+We found it convenient to use an unstructured mesh generator (Mesh2d v24) in MATLAB freely available from http://www.mathworks.com/matlabcentral/fileexchange/25555-mesh2d-automatic-mesh-generation". 
 
 ## Using the mesh generator Mesh2d
 
