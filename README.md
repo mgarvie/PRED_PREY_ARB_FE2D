@@ -33,28 +33,6 @@ Before the finite element codes can be run in MATLAB it is necessary to triangul
 
 We found it convenient to use an unstructured mesh generator (Mesh2d v24) in MATLAB freely available from http://www.mathworks.com/matlabcentral/fileexchange/25555-mesh2d-automatic-mesh-generation". 
 
-## Using the mesh generator Mesh2d
-
-For convenience we provide an example of a 'front-end' in MATLAB for constructing an unstructured grid using using Mesh2d (see above), for the case of a hypothetical lake with an island. Initially a list of nodes defining the boundary of the lake and the island are supplied. Then after calling Mesh2d to construct the mesh, the arrays p and t that define the mesh are exported as files 'p_coord.dat' and 't_triang.dat' respectively. We also export the list of grid-nodes on the edge of the lake and on the island as files 'bn2_nodes.dat' and 'bn1_nodes.dat' respectively. An example mesh and the MATLAB front-end that can be copied and adapted are given below:
-
-mesh2d_example.m,    Front-end code for meshing a hypothetical lake with an island.
-lake_mesh.jpg    JPEG image of a coarse grid generated from this example.
-
-## Line-by-line description of the code for fe2d_nd.m
-
-The codes are mostly self-explanatory, with comments to explain what each section of the code does. For example, the structure of fe2d_nd.m is outlined below. The structure of the other codes are similar. The line-numbered codes are listed at the bottom of the page in PDF format.
-
-    Lines 23 - 46: External data files for the mesh are loaded.
-    Lines 50 - 78: User prompted for the parameter values, initial data functions, Dirichlet data functions, and Neumann data functions. The functions are entered as strings (allowable formats discussed below) and then converted to anonymous functions.
-    Lines 82 - 140: The Stiffness Matrix K and the Finite Element Matrix L are assembled.
-    Lines 147 - 197: The linear system is solved repeatedly until time T .
-        Lines 149 - 157: The coefficient matrices A2, B2 and C2 are updated with the current solutions, as is the right-hand-side of the linear system.
-        Lines 158 - 173: The Neumann boundary conditions are imposed for each edge of Gamma2.
-        Lines 174-186: The Dirichlet boundary conditions are imposed for each node on Gamma1.
-        Lines 187 - 189: The Incomplete LU factorizations of the coefficient matrices A2 and C2 are computed to provide preconditioners for the GMRES iterative solver.
-        Lines 190-196: The linear system is solved using the GMRES iterative solver.
-    Lines 201 - 214: The finite element solutions for u and v are plotted using a triangular surface plot at time T (a vertical 'colorbar' provides a scale).
-
 ## The initial data
 
 The user is prompted for the initial data, which can be functions depending on space, or just constants. Unlike with the simpler PRED_PREY_SIM codes no special format is required for entering the initial data functions.
@@ -65,12 +43,10 @@ An example with an acceptable format is the following:
         >> Enter initial predator function v0(x,y)  1.0
       
 
-We can also define functions in a piecewise fashion. For example, with Omega=[0,100]2, in order to choose an initial predator density of 0.2 within a circle with radius 5 and center (50,50), and a density of 0 elsewhere on Omega we input the following:
-
+We can also define functions in a piecewise fashion. For example, with Omega=[0,100]x[0,100], in order to choose an initial predator density of 0.2 within a circle with radius 5 and center (50,50), and a density of 0 elsewhere on Omega we input the following:
       
         >> Enter initial data function u0(x,y) 0.2*((x-50)^2+(y-50)^2<25)
       
-
 ## The boundary conditions
 
 The boundary of the whole domain is denoted Gamma. In the mixed boundary condition cases we assume Gamma is the union of two pieces Gamma1 and Gamma2. The code allows for the following boundary conditions:
@@ -82,7 +58,7 @@ The boundary of the whole domain is denoted Gamma. In the mixed boundary conditi
     Mixed boundary conditions with a Robin condition on Gamma1 and a Neumann condition on Gamma2.
     Periodic boundary conditions on Gamma.
 
-The Neumann, Dirichlet, and Robin boundary conditions have the following form (see bc.jpg) where n denotes the unit outward normal to the domain Gamma and k1 and k2 are real numbers (positive, negative, or zero). The Neumann and Dirichlet boundary conditions can be functions of space (x and y) and time t.The periodic boundary conditions are used for the problem defined over a square of arbitrary side length L (the code is self contained and thus a grid does not need to be imported). If we label the sides of a square bn1, bn2, bn3 and bn4 (see periodic.png) then at each time step the boundary values on sides bn2 and bn1 are used to over-write the boundary values on sides bn4 and bn3 respectively, thus enforcing the periodicity of the boundary conditions (see the above figure).
+The Neumann and Dirichlet boundary conditions can be functions of space (x and y) and time t.The periodic boundary conditions are used for the problem defined over a square of arbitrary side length L (the code is self contained and thus a grid does not need to be imported). If we label the sides of a square bn1, bn2, bn3 and bn4 then at each time step the boundary values on sides bn2 and bn1 are used to over-write the boundary values on sides bn4 and bn3 respectively, thus enforcing the periodicity of the boundary conditions.
 
 There is no special format for entering the boundary functions, for example when running fe2dx_nd.m we might have:
 
@@ -91,7 +67,6 @@ There is no special format for entering the boundary functions, for example when
        >> Enter the Neumann b.c. g2v(x,y,t) for v  0.0
        >> Enter the Neumann b.c. g2v(x,y,t) for v  0.6
     
-
 ## Some practical issues
 
 Firstly, bear in mind that if you run a simulation with a large domain size and large final time T, coupled with small temporal and spatial discretization parameters, then the run-time in MATLAB can be prohibative.
@@ -121,7 +96,7 @@ Files you may copy include:
 
 ## Download the 'slow' codes for FE2D
 
-These are the codes described in paper no. 2 referenced above. For more computationally intensive problems the 'fast' versions of these codes are recommended (see below). Files you may copy include the MATLAB M-files:
+These are the codes described in the 2nd paper referenced above. For more computationally intensive problems the 'fast' versions of these codes are recommended (see below). Files you may copy include:
 
     fe2d_n.m,  Scheme 2 applied to Kinetics 1 with pure Neumann boundary conditions.
     fe2dx_n.m,  Scheme 1 applied to Kinetics 1 with pure Neumann boundary conditions.
@@ -140,7 +115,7 @@ These are the codes described in paper no. 2 referenced above. For more computat
 
 ## Download the 'fast' codes for FE2D
 
-These are the same as the codes listed above, but optimized for speed. Files you may copy include the MATLAB M-files, the PDF versions with line numbering, and front ends with test data for running the fast codes. See the comments in the fast M-files for further implementation details:
+These are the same as the codes listed above, but optimized for speed. Files you may copy include the MATLAB M-files, and front ends with test data for running the fast codes. See the comments in the fast M-files for further implementation details:
 
     fe2d_n_fast.m,  Scheme 2 applied to Kinetics 1 with pure Neumann boundary conditions.
     fe2d_n_fast_test.m,  A front end with some test data that can be used to run fe2d_n_fast.m.
