@@ -8,7 +8,7 @@ PRED_PREY_ARB_FE2D is a collection of MATLAB codes using the finite element meth
 
 Marcus R. Garvie. (2022). mgarvie/PRED_PREY_ARB_FE2D: Initial release with Zenodo (v2.0.0). Zenodo. https://doi.org/10.5281/zenodo.5850932
 
-## Description:
+## General Description:
 
 PRED_PREY_ARB is a collection of simple MATLAB routines using the finite element method for simulating the dynamics of predator-prey interactions modelled by a nonlinear reaction-diffusion system. Unlike FD2D the systems are solved on domains of arbitrary shape using general boundary conditions. The collection of 2D codes are called FE2D. 
 
@@ -153,4 +153,4 @@ Files you may copy include:
     subsetconnectivity.m    Finds the boundary edges in a triangular mesh for a portion of the boundary.
     timestamp.m,    Prints the current YMDHMS date as a timestamp.
 
-FE2D is distributed under the GNU GPL; see the mycopyright.txt file for more information. 
+PRED_PREY_ARB_FE2D is distributed under the GNU GPL; see the mycopyright.txt file for more information. 
