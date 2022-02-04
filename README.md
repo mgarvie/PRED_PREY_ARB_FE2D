@@ -127,53 +127,53 @@ Files you may copy include:
 
 ## Download the 'slow' codes for FE2D
 
-These are the codes described in paper no. 2 referenced above. For more computationally intensive problems the 'fast' versions of these codes are recommended (see below). Files you may copy include the MATLAB M-files and PDF versions with line numbering:
+These are the codes described in paper no. 2 referenced above. For more computationally intensive problems the 'fast' versions of these codes are recommended (see below). Files you may copy include the MATLAB M-files:
 
-    fe2d_n.m,  fe2d_n.pdf    Scheme 2 applied to Kinetics 1 with pure Neumann boundary conditions.
-    fe2dx_n.m,  fe2dx_n.pdf    Scheme 1 applied to Kinetics 1 with pure Neumann boundary conditions.
-    fe2d_d.m,  fe2d_d.pdf    Scheme 2 applied to kinetics 1 with pure Dirichlet boundary conditions.
-    fe2dx_d.m,  fe2dx_d.pdf    Scheme 1 applied to kinetics 1 with pure Dirichlet boundary conditions.
-    fe2d_r.m,  fe2d_r.pdf    Scheme 2 applied to kinetics 1 with pure Robin boundary conditions.
-    fe2dx_r.m,  fe2dx_r.pdf    Scheme 1 applied to kinetics 1 with pure Robin boundary conditions.
-    fe2d_p.m,  fe2d_p.pdf    Scheme 2 applied to kinetics 1 with periodic boundary conditions over the square.
-    fe2dx_p.m,  fe2dx_p.pdf    Scheme 1 applied to kinetics 1 with periodic boundary conditions over the square.
-    fe2d_nd.m,  fe2d_nd.pdf    Scheme 2 applied to kinetics 1 with mixed Neumann/Dirichlet boundary conditions.
-    fe2dx_nd.m,  fe2dx_nd.pdf    Scheme 1 applied to kinetics 1 with mixed Neumann/Dirichlet boundary conditions.
-    fe2d_nr.m,  fe2d_nr.pdf    Scheme 2 applied to kinetics 1 with mixed Neumann/Robin boundary conditions.
-    fe2dx_nr.m,  fe2dx_nr.pdf    Scheme 1 applied to kinetics 1 with mixed Neumann/Robin boundary conditions.
-    fe2dx_nr_alt.m,  fe2dx_nr_alt.pdf    Same as fe2dx_nr, but using an implicit approximation of the boundary terms
+    fe2d_n.m,  Scheme 2 applied to Kinetics 1 with pure Neumann boundary conditions.
+    fe2dx_n.m,  Scheme 1 applied to Kinetics 1 with pure Neumann boundary conditions.
+    fe2d_d.m,  Scheme 2 applied to kinetics 1 with pure Dirichlet boundary conditions.
+    fe2dx_d.m,  Scheme 1 applied to kinetics 1 with pure Dirichlet boundary conditions.
+    fe2d_r.m,  Scheme 2 applied to kinetics 1 with pure Robin boundary conditions.
+    fe2dx_r.m,  Scheme 1 applied to kinetics 1 with pure Robin boundary conditions.
+    fe2d_p.m,  Scheme 2 applied to kinetics 1 with periodic boundary conditions over the square.
+    fe2dx_p.m,  Scheme 1 applied to kinetics 1 with periodic boundary conditions over the square.
+    fe2d_nd.m,  Scheme 2 applied to kinetics 1 with mixed Neumann/Dirichlet boundary conditions.
+    fe2dx_nd.m,  Scheme 1 applied to kinetics 1 with mixed Neumann/Dirichlet boundary conditions.
+    fe2d_nr.m,  Scheme 2 applied to kinetics 1 with mixed Neumann/Robin boundary conditions.
+    fe2dx_nr.m,  Scheme 1 applied to kinetics 1 with mixed Neumann/Robin boundary conditions.
+    fe2dx_nr_alt.m,  Same as fe2dx_nr.m, but using an implicit approximation of the boundary terms
     mycopyright.txt,    FE2D copyright details.
 
 ## Download the 'fast' codes for FE2D
 
 These are the same as the codes listed above, but optimized for speed. Files you may copy include the MATLAB M-files, the PDF versions with line numbering, and front ends with test data for running the fast codes. See the comments in the fast M-files for further implementation details:
 
-    fe2d_n_fast.m,  fe2d_n_fast.pdf    Scheme 2 applied to Kinetics 1 with pure Neumann boundary conditions.
-    fe2d_n_fast_test.m,  fe2d_n_fast_test.pdf    A front end with some test data that can be used to run fe2d_n_fast.m.
-    fe2dx_n_fast.m,  fe2dx_n_fast.pdf    Scheme 1 applied to Kinetics 1 with pure Neumann boundary conditions.
-    fe2dx_n_fast_test.m,  fe2dx_n_fast_test.pdf    A front end with some test data that can be used to run fe2dx_n_fast.m.
-    fe2d_d_fast.m,  fe2d_d_fast.pdf    Scheme 2 applied to kinetics 1 with pure Dirichlet boundary conditions.
-    fe2d_d_fast_test.m,  fe2d_d_fast_test.pdf    A front end with some test data that can be used to run fe2d_d_fast.m.
-    fe2dx_d_fast.m,  fe2dx_d_fast.pdf    Scheme 1 applied to kinetics 1 with pure Dirichlet boundary conditions.
-    fe2dx_d_fast_test.m,  fe2dx_d_fast_test.pdf    A front end with some test data that can be used to run fe2dx_d_fast.m.
-    fe2d_r_fast.m,  fe2d_r_fast.pdf    Scheme 2 applied to kinetics 1 with pure Robin boundary conditions.
-    fe2d_r_fast_test.m,  fe2d_r_fast_test.pdf    A front end with some test data that can be used to run fe2d_r_fast.m.
-    fe2dx_r_fast.m,  fe2dx_r_fast.pdf    Scheme 1 applied to kinetics 1 with pure Robin boundary conditions.
-    fe2dx_r_fast_test.m,  fe2dx_r_fast_test.pdf    A front end with some test data that can be used to run fe2dx_r_fast.m.
+    fe2d_n_fast.m,  Scheme 2 applied to Kinetics 1 with pure Neumann boundary conditions.
+    fe2d_n_fast_test.m,  A front end with some test data that can be used to run fe2d_n_fast.m.
+    fe2dx_n_fast.m,  Scheme 1 applied to Kinetics 1 with pure Neumann boundary conditions.
+    fe2dx_n_fast_test.m,  A front end with some test data that can be used to run fe2dx_n_fast.m.
+    fe2d_d_fast.m,  Scheme 2 applied to kinetics 1 with pure Dirichlet boundary conditions.
+    fe2d_d_fast_test.m,  A front end with some test data that can be used to run fe2d_d_fast.m.
+    fe2dx_d_fast.m,  Scheme 1 applied to kinetics 1 with pure Dirichlet boundary conditions.
+    fe2dx_d_fast_test.m,  A front end with some test data that can be used to run fe2dx_d_fast.m.
+    fe2d_r_fast.m,  Scheme 2 applied to kinetics 1 with pure Robin boundary conditions.
+    fe2d_r_fast_test.m,  A front end with some test data that can be used to run fe2d_r_fast.m.
+    fe2dx_r_fast.m,  Scheme 1 applied to kinetics 1 with pure Robin boundary conditions.
+    fe2dx_r_fast_test.m,  A front end with some test data that can be used to run fe2dx_r_fast.m.
     fe2d_p_fast.m,  fe2d_p_fast.pdf    Scheme 2 applied to kinetics 1 with Periodic boundary conditions.
-    fe2d_p_fast_test.m,  fe2d_p_fast_test.pdf    A front end with some test data that can be used to run fe2d_p_fast.m.
-    fe2dx_p_fast.m,  fe2dx_p_fast.pdf    Scheme 1 applied to kinetics 1 with Periodic boundary conditions.
-    fe2dx_p_fast_test.m,  fe2dx_p_fast_test.pdf    A front end with some test data that can be used to run fe2dx_p_fast.m.
-    fe2d_nd_fast.m,  fe2d_nd_fast.pdf    Scheme 2 applied to kinetics 1 with mixed Neumann/Dirichlet boundary conditions.
-    fe2d_nd_fast_test.m,  fe2d_nd_fast_test.pdf    A front end with some test data that can be used to run fe2d_nd_fast.m.
-    fe2dx_nd_fast.m,  fe2dx_nd_fast.pdf    Scheme 1 applied to kinetics 1 with mixed Neumann/Dirichlet boundary conditions.
-    fe2dx_nd_fast_test.m,  fe2dx_nd_fast_test.pdf    A front end with some test data that can be used to run fe2dx_nd_fast.m.
-    fe2d_nr_fast.m,  fe2d_nr_fast.pdf    Scheme 2 applied to kinetics 1 with mixed Neumann/Robin boundary conditions.
-    fe2d_nr_fast_test.m,  fe2d_nr_fast_test.pdf    A front end with some test data that can be used to run fe2d_nr_fast.m.
-    fe2dx_nr_fast.m,  fe2dx_nr_fast.pdf    Scheme 1 applied to kinetics 1 with mixed Neumann/Robin boundary conditions.
-    fe2dx_nr_fast_test.m,  fe2dx_nr_fast_test.pdf    A front end with some test data that can be used to run fe2dx_nr_fast.m.
-    fe2dx_nr_alt_fast.m,  fe2dx_nr_alt_fast.pdf    Same as fe2dx_nr_fast, but using an implicit approximation of the boundary terms
-    fe2dx_nr_alt_fast_test.m,  fe2dx_nr_alt_fast_test.pdf    A front end with some test data that can be used to run fe2dx_nr_alt_fast.m.
+    fe2d_p_fast_test.m,  A front end with some test data that can be used to run fe2d_p_fast.m.
+    fe2dx_p_fast.m,  Scheme 1 applied to kinetics 1 with Periodic boundary conditions.
+    fe2dx_p_fast_test.m,  A front end with some test data that can be used to run fe2dx_p_fast.m.
+    fe2d_nd_fast.m,  Scheme 2 applied to kinetics 1 with mixed Neumann/Dirichlet boundary conditions.
+    fe2d_nd_fast_test.m,  A front end with some test data that can be used to run fe2d_nd_fast.m.
+    fe2dx_nd_fast.m,  Scheme 1 applied to kinetics 1 with mixed Neumann/Dirichlet boundary conditions.
+    fe2dx_nd_fast_test.m,  A front end with some test data that can be used to run fe2dx_nd_fast.m.
+    fe2d_nr_fast.m,  Scheme 2 applied to kinetics 1 with mixed Neumann/Robin boundary conditions.
+    fe2d_nr_fast_test.m,  A front end with some test data that can be used to run fe2d_nr_fast.m.
+    fe2dx_nr_fast.m,  Scheme 1 applied to kinetics 1 with mixed Neumann/Robin boundary conditions.
+    fe2dx_nr_fast_test.m,  A front end with some test data that can be used to run fe2dx_nr_fast.m.
+    fe2dx_nr_alt_fast.m,  Same as fe2dx_nr_fast.m, with an implicit approximation of the boundary terms
+    fe2dx_nr_alt_fast_test.m,  A front end with some test data that can be used to run fe2dx_nr_alt_fast.m.
     mycopyright.txt,    FE2D copyright details.
 
 ## Associated codes you will need
@@ -184,7 +184,4 @@ Files you may copy include:
     subsetconnectivity.m    Finds the boundary edges in a triangular mesh for a portion of the boundary.
     timestamp.m,    Prints the current YMDHMS date as a timestamp.
 
-Boundary node lists for Experiments 2, 3, 4 and 6.
-(To be uploaded soon - see reference 2. listed above.)
-
-FE2D is distributed under the GNU GPL; see the mycopyright.txt notice for more information. 
+FE2D is distributed under the GNU GPL; see the mycopyright.txt file for more information. 
