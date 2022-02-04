@@ -6,7 +6,7 @@ PRED_PREY_ARB_FE2D is a collection of MATLAB codes using the finite element meth
 
 ## Cite as:
 
-Marcus R. Garvie. (2022). mgarvie/PRED_PREY_ARB_FE2D: Initial release with Zenodo (v2.0.0). Zenodo. https://doi.org/10.5281/zenodo.5850932
+Marcus R. Garvie. (2022). mgarvie/PRED_PREY_ARB_FE2D: (v2.0.3). Zenodo. https://doi.org/10.5281/zenodo.5973444
 
 ## General Description:
 
